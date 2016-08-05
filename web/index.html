@@ -1,0 +1,232 @@
+ <!DOCTYPE html>
+
+<html>
+	<head>
+		<title>HumivoCo</title>
+		<meta name="viewport"  content="width=device-width, initial-scale=1.0">
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		<link href = "css/styles.css" rel "stylesheet">
+
+	</head>
+	<body>
+
+
+
+
+		   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+
+	<div class="collapse navbar-collapse">
+	  	<ul class="nav navbar-nav" id="top-nav" role="tablist">
+	    	<li><a href="#home">Home</a></li>
+	    	<li><a href="#about">About</a></li>
+	    	<li><a href="#projects">Projects</a></li>
+	    	<li><a href="#contact">Contact us</a></li>
+	    	<li><a href="#media">Media</a></li>
+	    	
+		</ul>
+	</div>
+</div>	
+
+		
+
+
+
+
+
+		<div class = "container" id="home">
+			<center><img src="humivoco_logo2.png"  style="display: block;" id="logo"></center>
+		</div>
+		<div class = "container">
+			
+				
+				<h1 class="text-center" id="homehead">HumivoCo</h1>
+				<p class="text-center" id="text">A development company that tries to showcase new creations and projects from the one and only Huy Vo</p>
+				<center><a class ="btn btn-default" href="#about">Learn more</a></center>
+				
+
+			
+		</div>
+		
+		
+		<div class = "container" id ="about">
+				<h2 class="page-header" id="abouthead">
+					About
+				</h2>
+				<p id="textreg">HumivoCo is a small company that develops new projects such as android apps and any other creations.  The company was built by Huy Vo, a student of Cherry Hill East and a determined programmer/developer.  Currently, he specializes in the programming languages python, C, and Java.  Hopefully in the future the company may expand into something great in nature.
+				</p>
+				
+				<p id="textreg">
+					More peronsonally, Huy is a vietnamese-american student that lives in Cherry Hill, NJ.  He knows how to speak vietnamese rather fluently and practices buddhism at Chua Bo De temple in Philadelphia, PA.  At the temple, he is part of the Gia dinh phat tu group, which is a youth buddhist group that helps the temple while develop useful skills.  
+				</p>
+				
+						<!-- <center><img src="me.png" width="380px" height="280px" id="me"></center> -->
+						
+				
+						
+					
+				
+		</div>
+		<div class = "container" id ="projects">
+			<h2 class="page-header" id="abouthead">
+					Projects
+			</h2>
+			<p id="textreg">These are the current projects that HumivoCo has worked on and produced/completed.</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-margin">
+				<div class="hover07 column">
+					<div>
+						<figure><a href="https://play.google.com/store/apps/details?id=com.humivo.huy.robotscout" target="_blank"><img src="unnamed.webp" /></a></figure>
+						<span>RobotScout</span>
+					</div>
+				</div>	
+			</div>
+			<div class="col-sm-3 col-sm-offset-1 col-margin">
+				<div class="hover07 column">
+					<div>
+						<figure onclick="openNav()"><img src="math.webp" /></figure>
+						<span>Math Formula</span>
+					</div>
+				</div>
+			</div>	
+			<div class="col-sm-3 col-sm-offset-1 col-margin">
+				<div class="hover07 column">
+					<div>
+						<figure><a href="https://play.google.com/store/apps/details?id=com.viet.buddhist.helper" target="_blank"><img src="viet.webp" /></a></figure>
+						<span>VB Helper</span>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>	
+		
+	
+	<div id="myNav" class="overlay">
+			 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+			  <div class="overlay-content">
+			  	<center><img src="math.webp" width="100px" height="100px"></center>
+			    <p id="math_formula_text"> Math Formula </p>
+			    <p id="math_formula_text_2">This is a program written in python that can do several common formulas in math for the user such as quadratic formula which can be a pain to do with a calculator in real life.  The program executes in command line for ease.  Download the source code below.</p>
+			  </div>
+
+		</div>
+	
+		</div>
+		<div class = "container" id ="contact">
+			<h2 class="page-header" id="abouthead">
+					Contact us
+			</h2>
+			<p id="textreg">If you have any questions or requests, please contact us by email or fill out the request form below.</p>
+			<div style="display:inline-block;">
+				<img src="email.svg" width="150px" height="150px">
+			</div>
+			<div id="contact_email">
+				<p>Humivo@gmail.com</p>
+			</div>
+			<p id="textreg" style="padding-left:57px;padding-top:15px">Or</p>
+
+			<div style="display:inline-block;padding-left:12px;padding-top:5px;">
+				<img src="info-128.png" width="125px" height="125px">
+			</div>
+			<div style="padding-left:15px;" id="contact_email">
+				<p>Inquiry Form</p>
+			</div>
+
+			<form class="form-horizontal" role="form" method="post" action="process.php" style="padding-top:20px;">
+	<div class="form-group">
+		<label for="name" class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="email" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="message" class="col-sm-2 control-label">Message</label>
+		<div class="col-sm-7">
+			<textarea class="form-control" rows="4" name="message"></textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-10 col-sm-offset-2">
+			<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-10 col-sm-offset-2">
+			<! Will be used to display an alert to the user>
+		</div>
+	</div>
+</form>
+				
+	</div>
+		
+		
+		<div class = "container" id ="media">
+			<h2 class="page-header" id="abouthead">
+					Media
+			</h2>
+			<center><p id="textreg">Follow me on social media for updates!</p>
+			<div style="display:inline-block;padding-top:20px;">
+				<a href="https://twitter.com/Huy_V0" target="_blank"><img src="twitter-128.png" width="125px" height="125px"></a>
+			</div>
+			<div style="display:inline-block;padding-left:50px;padding-top:20px;padding-bottom: 50px;">
+				<a href="https://www.instagram.com/huy_vo_/" target="_blank"><img src="instagram-128.png" width="125px" height="125px"></a>
+			</div>
+			</center>
+
+		</div>
+		
+		
+	
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jquery.nav.js"></script>
+		<script type="text/javascript" src="js/form-script.js"></script>
+		
+		<script>
+			$('#top-nav').onePageNav({
+				currentClass: 'active',
+				changeHash: true,
+				scrollSpeed: 750
+			});
+			
+			function openNav() {
+			    document.getElementById("myNav").style.height = "100%";
+			}
+
+			
+			function closeNav() {
+			    document.getElementById("myNav").style.height = "0%";
+			}
+
+		
+
+			
+			
+			
+		</script>	
+
+	</body>
+
+</html>
